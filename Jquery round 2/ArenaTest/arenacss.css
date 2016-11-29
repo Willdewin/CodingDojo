@@ -1,0 +1,33 @@
+#box{
+	width: 300px;
+	height: 175px;
+	border: solid;
+	border-color: black;
+	margin: 0 auto;
+	background-color: black;
+}
+body{
+	height: 100vh;
+	width: 100vw;
+	/*background-repeat: no-repeat;*/
+	background-size: 100%;
+}
+#ninjas{
+	width: 1080px;
+	height: 250px;
+	margin-top: 300px
+}
+#ninjaleft{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}#ninjaright{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin-left: 600px;
+}
+#warriorb{
+	margin-top: 130px;
+	margin-left: 200px;
+}

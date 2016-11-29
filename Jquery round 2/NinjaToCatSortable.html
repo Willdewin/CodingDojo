@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ninja To Cat</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+       <script type="text/javascript">
+        $(document).ready(function(){
+            $('#ninja').sortable();
+            $('#ninja0').click(function(){
+                var src = $(this).attr('src');
+                if(src == '/CnNpictures/cat0.png')
+                    {
+                        $(this).attr('src', '/CnNpictures/ninja0.png')
+                    }
+                    else
+                        $(this).attr('src', '/CnNpictures/cat0.png')
+            })
+            $('#ninja1').click(function(){;
+                var src = $(this).attr('src');
+                if(src == '/CnNpictures/ninja1.png')
+                    {
+                        $(this).attr('src', '/CnNpictures/cat1.png')
+                    }
+                    else
+                        $(this).attr('src', '/CnNpictures/ninja1.png')
+            })
+            $('#ninja2').click(function(){
+                var src = $(this).attr('src');
+                if(src == '/CnNpictures/ninja2.png')
+                    {
+                        $(this).attr('src', '/CnNpictures/cat2.png')
+                    }
+                    else
+                        $(this).attr('src', '/CnNpictures/ninja2.png')
+            })
+            $('#ninja3').click(function(){
+                var src = $(this).attr('src');
+                if(src == '/CnNpictures/ninja3.png')
+                    {
+                        $(this).attr('src', '/CnNpictures/cat3.png')
+                    }
+                    else
+                        $(this).attr('src', '/CnNpictures/ninja3.png')
+                
+            })
+            $('#ninja4').click(function(){
+                var src = $(this).attr('src')
+                if(src == '/CnNpictures/ninja4.png')
+                    {
+                        $(this).attr('src', '/CnNpictures/cat4.png')
+                    }
+                    else
+                        $(this).attr('src', '/CnNpictures/ninja4.png')
+            })
+        });
+        console.log('test')
+    </script>
+</head>
+<body>
+    <h1>Jquery Puzzle Assignment</h1>
+    <ul id="ninja">
+        <li><img id="ninja0" src="/CnNpictures/cat0.png" alt=""></li>
+        <li><img id="ninja1" src="/CnNpictures/cat1.png" alt=""></li>
+        <li><img id="ninja2" src="/CnNpictures/cat2.png" alt=""></li>
+        <li><img id="ninja3" src="/CnNpictures/cat3.png" alt=""></li>
+        <li><img id="ninja4" src="/CnNpictures/cat4.png" alt=""></li>   
+    </ul>
+</body>
+</html>

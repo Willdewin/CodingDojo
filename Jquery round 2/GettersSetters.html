@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+//        $('button').click(function(){
+//            var mytext = $('#myparagraph').text();
+//            alert(mytext);
+//        });
+        $('button').click(function(){
+            $('#myparagraph').text('This is how .text() works as a setter!')   
+        });
+        $('h1').html('<i>Test Header</i>')
+        console.log($('h1').html());
+        // What you want to grab the val of, then () will change what it is
+        $('#computer').val('This was changed using the .val');
+	});
+	</script>
+	<title></title>
+</head>
+<body>
+	<p id="myparagraph"> This is my paragraph</p>
+	<button>Click me to change the paragraph</button>
+	<h1>Test Header</h1>
+	<input type="text" value="Macbook" id="computer">
+
+</body>
+</html>

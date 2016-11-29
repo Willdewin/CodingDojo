@@ -1,0 +1,10 @@
+.ninjas{
+    border:3px solid black;
+    padding: 2px;
+    height: 220px;
+    width: 215px;
+    display:inline-block
+}
+#ninjabox{
+    width: 950px
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JQuery Round 2</title>
+  <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      
+      var dojo = 'Message for console'
+
+      console.log(dojo)
+
+      $('#hideshowpar').hide(); 
+      $('a').click(function(){
+          alert('You Are Now leaving the page');
+      });
+      $('#hide').click(function(){
+        $('#hideshowpar').hide();
+      });
+      $('#show').click(function(){
+        $('#hideshowpar').show();
+      });
+      // Adding a , in between }); you can add a seperate function, adding another .text to the hover invokes a hoverout
+      $('h4').hover(function(){
+        $('h4').text('This is the text that shows when you hover')
+      },function(){
+        $('h4').text('Click MEEE')
+      });
+      $('.append').click(function(){
+        $('.result').append('<h3> .append adds HTML! <h3>')
+      });
+      $('button').click(function(){
+        $('button').css('background-color', 'yellow')
+      });
+    })
+  </script>
+</head>
+<body>
+  <h4>Click Me</h4>
+  <p id="hideshowpar"><a href="http://google.com">Link for Google</a></p>
+  <button id="hide">This will hide the paragraphs</button>
+  <button id="show">This will show the paragraphs</button>
+  <div class="result"></div>
+  <button class="append">Click to see .append working</button>
+</body>
+</html>
